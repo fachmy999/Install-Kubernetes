@@ -4,6 +4,8 @@ Tutorial Install Kubernetes
 ![Product Name Screen Shot](https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png)
 
 # Housekeeping
+
+```
 yum update -y
 swapoff -a
 sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
@@ -11,6 +13,7 @@ systemctl disable firewalld
 systemctl stop firewalld
 setenforce 0
 sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+```
 Housekeeping done selesai
 
 # Tambahakan ip addres dan hostname di kesemua server kubernetes
