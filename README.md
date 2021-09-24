@@ -146,7 +146,10 @@ chown -R ${MAINUSER}:${MAINUSER} /home/${MAINUSER}/.kube
 ```
 
 # simpan command untuk worker anda join kedalam master kubernetes
+
+```
 kubeadm join 192.168.0.120:6443 --token khm95w.mo0wwenu2o9hglls --discovery-token-ca-cert-hash sha256:aeb0ca593b63c8d674719858fd2397825825cebc552e3c165f00edb9671d6e32
+```
   
 # Menginstal add-on jaringan Pod DNS klaster (CoreDNS) tidak akan menyala sebelum jaringan dipasangkan.
 ```
@@ -155,10 +158,11 @@ kubectl apply -f https://docs.projectcalico.org/v3.11/manifests/calico.yaml
 
 # Menggabungkan Node-Node Pada kubernetes Cluster
 Node adalah tempat beban kerja (Container, Pod, dan lain-lain) berjalan. Untuk menambahkan Node baru pada klaster lakukan hal berikut pada setiap mesin:
-  
-# kubeadm join --token <token> <control-plane-host>:<control-plane-port> --discovery-token-ca-cert-hash sha256:<hash>
- 
-- Install kubeadm selesai
+
+```
+kubeadm join --token <token> <control-plane-host>:<control-plane-port> --discovery-token-ca-cert-hash sha256:<hash>
+```
+Install kubeadm selesai
 
 # Kumpulan Command Kubernetes
 
