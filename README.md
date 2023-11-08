@@ -129,7 +129,6 @@ systemctl restart kubelet
 kubeadm config images pull
 ```
 
-# -----------------------------------------------------------
 
 # Mulai dari Sini Hanya Untuk Installasi Kubernetes Master
 
